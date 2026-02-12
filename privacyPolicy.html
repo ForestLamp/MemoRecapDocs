@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Privacy Policy - MemoRecap</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0 auto;
-            max-width: 900px;
+            max-width: 800px;
             padding: 20px;
             background-color: #000;
             color: #fff;
         }
-        h1 {
-            text-align: center;
-        }
-        h2 {
-            margin-top: 30px;
-            border-bottom: 1px solid #444;
-            padding-bottom: 8px;
-        }
-        h3 {
-            margin-top: 20px;
-        }
-        ul {
-            margin-left: 20px;
+        h1 { text-align: center; }
+        h2 { margin-top: 30px; border-bottom: 1px solid #444; padding-bottom: 8px; }
+        h3 { margin-top: 20px; color: #ddd; }
+        ul { margin-left: 20px; }
+        .important {
+            background-color: #1a1a1a;
+            border-left: 4px solid #ff6b6b;
+            padding: 10px 15px;
+            margin: 15px 0;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
+            margin: 20px 0;
         }
-        td, th {
+        th, td {
             border: 1px solid #444;
-            padding: 8px;
+            padding: 10px;
+            text-align: left;
         }
+        tr:nth-child(even) { background-color: #0a0a0a; }
+        tr:nth-child(odd) { background-color: #151515; }
+        a { color: #6c9ef8; text-decoration: none; }
     </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
+<p><strong>Effective Date:</strong> February 1, 2026</p>
+<p><strong>Last Updated:</strong> February 1, 2026</p>
 
-<p><strong>Effective Date:</strong> February 1, 2026<br>
-<strong>Last Updated:</strong> February 1, 2026</p>
-
-<p>This Privacy Policy explains how <strong>MemoRecap</strong> (the “Application”) collects, uses, and protects your personal data.</p>
+<p>This Privacy Policy explains how <strong>MemoRecap</strong> (the "Application") collects, uses, and protects your personal data.</p>
 
 <p>
 <strong>Data Controller:</strong><br>
@@ -56,198 +55,148 @@ Jurisdiction: Republic of Serbia
 </p>
 
 <p>
-By installing, accessing, or using the Application, you agree to this Privacy Policy and our Terms of Service.
+By using the Application, you agree to the collection and use of information in accordance with this Privacy Policy and our 
+<a href="terms-of-service.html">Terms of Service</a>.
 </p>
 
 <h2>1. Data Storage Architecture</h2>
-
-<p>The Application does not operate backend servers for storing user content.</p>
-
-<p>All user-generated data, including:</p>
+<p>The Application does not use its own backend servers to store user content.</p>
 <ul>
-<li>Voice recordings</li>
-<li>Transcripts</li>
-<li>AI-generated summaries</li>
-<li>Custom AI prompts</li>
+    <li><strong>Local Storage:</strong> Voice recordings and transcripts are stored locally on your device.</li>
+    <li><strong>iCloud:</strong> If enabled, data is synced via your personal Apple iCloud account. We have no access to your iCloud files.</li>
 </ul>
 
-<p>
-is stored locally on your device and/or in your personal iCloud account (if enabled).
-</p>
-
-<p>
-We do not have technical access to, and cannot retrieve or restore, your recordings or summaries.
-You are solely responsible for backups and iCloud synchronization.
-</p>
+<div class="important">
+<strong>Important:</strong> We do not have technical access to, and cannot retrieve or restore, your recordings or summaries. 
+You are solely responsible for managing backups and iCloud synchronization.
+</div>
 
 <h2>2. Data We Collect and Process</h2>
 
 <h3>2.1 User Content</h3>
+<ul>
+    <li>Voice recordings</li>
+    <li>Transcripts</li>
+    <li>AI-generated summaries</li>
+    <li>Custom AI prompts</li>
+</ul>
 <p>
-User content is processed solely to provide Application functionality.
-We do not access, store, monitor, or use your content for any independent purpose.
+User content is processed solely to provide Application functionality and is not accessed or stored by us for independent purposes.
 </p>
 
-<h3>2.2 Analytics Data</h3>
-<p>We use <strong>Firebase Analytics</strong> (Google LLC) to improve the Application.</p>
-
+<h3>2.2 Analytics Data (Firebase)</h3>
+<p>We use <strong>Firebase Analytics</strong> (Google LLC) to improve performance and stability.</p>
 <ul>
-<li>Device type and model</li>
-<li>iOS version</li>
-<li>Feature usage statistics</li>
-<li>Crash logs</li>
-<li>Anonymized device identifiers</li>
-<li>Approximate country-level location</li>
+    <li>Device type and model</li>
+    <li>iOS version</li>
+    <li>App usage statistics</li>
+    <li>Crash reports</li>
+    <li>Anonymized device identifiers</li>
 </ul>
 
-<p>Firebase does NOT collect:</p>
-<ul>
-<li>Your recordings</li>
-<li>Your transcripts</li>
-<li>Your AI-generated summaries</li>
-<li>Precise location</li>
-</ul>
-
-<p>Analytics data is retained by Firebase for up to 14 months under Google’s policies.</p>
-
-<h3>2.3 Subscription Data</h3>
 <p>
-Payments are processed exclusively by Apple via the App Store.
-We do not access payment card or billing details.
+Analytics data does <strong>not</strong> include your recordings, transcripts, or summaries.
+Retention period: up to 14 months under Google’s policies.
 </p>
 
-<p>
-Subscription validation is handled via AppHud.
-AppHud processes subscription metadata only (tier, expiration, transaction identifiers).
-</p>
+<h3>2.3 Subscription Data (AppHud)</h3>
+<p>Payments are processed exclusively by Apple via the App Store.</p>
+<p>We do not access payment card or billing details.</p>
+<p>AppHud processes subscription metadata only (tier, status, expiration, transaction identifiers).</p>
 
 <h2>3. AI Processing</h2>
 
 <h3>3.1 Third-Party AI Providers</h3>
-
 <p>
-When you use transcription or summary features, your recording or text is temporarily transmitted to third-party AI providers such as <strong>Replicate, Inc.</strong>.
+When you use transcription or summary features, your recording or text is temporarily transmitted to <strong>Replicate, Inc.</strong> via encrypted TLS connection.
 </p>
 
-<p>
-Processing occurs only when you actively request transcription or summarization.
-</p>
+<ul>
+    <li>Processing occurs only when you actively request transcription or summarization.</li>
+    <li>We do not store AI inputs or outputs on our servers.</li>
+    <li>We do <strong>not authorize</strong> the use of your data for AI model training.</li>
+</ul>
 
 <p>
-We do not store AI inputs or outputs on our servers.
+According to Replicate’s policies, inputs and outputs may be retained temporarily (for example, up to 30 days) for debugging, abuse prevention, and operational purposes, after which they are deleted in accordance with their policies.
 </p>
 
-<p>
-We do not authorize or permit the use of your content for training AI models.
-AI providers process data under their own privacy policies and data processing agreements.
-</p>
-
-<p>
-AI providers may retain inputs and outputs temporarily for operational, debugging, abuse prevention, or compliance purposes, typically for a limited period (for example, up to 30 days), in accordance with their policies.
-</p>
-
-<h3>3.2 Legal Responsibility for AI Outputs</h3>
+<h3>3.2 AI Accuracy & User Responsibility</h3>
 
 <p>
 AI outputs are generated automatically by third-party systems beyond our direct control.
 </p>
 
+<div class="important">
+AI-generated transcripts and summaries may contain inaccuracies or errors and are provided for informational purposes only.  
+They should not be relied upon for medical, legal, financial, or professional decisions.
+</div>
+
 <p>
-You acknowledge and agree that:
+You may customize AI prompts and instructions. You are solely responsible for the content and configuration of custom prompts and for verifying AI-generated outputs before relying on them.
+We do not review, monitor, or control user-defined prompts.
 </p>
-<ul>
-<li>AI outputs may contain inaccuracies or errors</li>
-<li>AI outputs are for informational purposes only</li>
-<li>You are solely responsible for verifying AI-generated content</li>
-<li>You assume all risks associated with AI-generated results</li>
-</ul>
+
+<h2>4. International Data Transfers</h2>
 
 <p>
-To the maximum extent permitted by applicable law, we are not responsible for:
-</p>
-<ul>
-<li>Errors in transcription or summaries</li>
-<li>Decisions made based on AI outputs</li>
-<li>Consequences of modifying AI prompts</li>
-<li>Content generated through custom prompts</li>
-</ul>
-
-<h2>4. Legal Basis for Processing (EU Users)</h2>
-
-<p>For users located in the European Union, processing is based on:</p>
-<ul>
-<li>Performance of a contract (providing Application functionality)</li>
-<li>User consent (AI processing and analytics)</li>
-<li>Legitimate interest (security and service improvement)</li>
-</ul>
-
-<h2>5. International Data Transfers</h2>
-
-<p>
-Your data may be processed in jurisdictions outside your country of residence, including the United States.
+When using AI features or analytics, data may be processed outside your country of residence, including the United States.
 </p>
 
 <p>
-Where required, transfers rely on safeguards provided by service providers, including:
+We rely on contractual safeguards implemented by our service providers (such as Data Processing Agreements and Standard Contractual Clauses where applicable).
 </p>
 
+<h2>5. Your Privacy Rights</h2>
+
+<p>Depending on your location (GDPR, CCPA, etc.), you may have rights including:</p>
+
 <ul>
-<li>Standard Contractual Clauses (SCCs)</li>
-<li>Data Processing Agreements</li>
-<li>Applicable adequacy decisions</li>
+    <li>Access</li>
+    <li>Correction</li>
+    <li>Deletion</li>
+    <li>Restriction of processing</li>
+    <li>Data portability</li>
+    <li>Withdrawal of consent</li>
 </ul>
 
 <p>
-We rely on contractual safeguards implemented by our service providers.
+Since user content is stored locally, you can delete it directly in the Application or by uninstalling it.
+</p>
+
+<p>
+For analytics or subscription-related requests, contact: <strong>lapki.alex@gmail.com</strong>.
+We respond within the timeframe required by applicable law.
 </p>
 
 <h2>6. Data Retention</h2>
 
 <table>
-<tr>
-<th>Data Type</th>
-<th>Retention Period</th>
-</tr>
-<tr>
-<td>User Content</td>
-<td>Until deleted by user</td>
-</tr>
-<tr>
-<td>Analytics Data</td>
-<td>Up to 14 months</td>
-</tr>
-<tr>
-<td>Subscription Metadata</td>
-<td>Subscription duration + 12 months</td>
-</tr>
-<tr>
-<td>AI Processing Data</td>
-<td>Temporary processing per provider policies</td>
-</tr>
+<tr><th>Data Type</th><th>Retention Period</th></tr>
+<tr><td>User Content</td><td>Until deleted by you</td></tr>
+<tr><td>Analytics Data</td><td>Up to 14 months</td></tr>
+<tr><td>Subscription Metadata</td><td>Subscription duration + 12 months</td></tr>
+<tr><td>AI Processing Data</td><td>Temporary retention per provider policies</td></tr>
 </table>
 
 <h2>7. Security</h2>
-
 <ul>
-<li>TLS/SSL encryption in transit</li>
-<li>Secure API authentication</li>
-<li>iOS device encryption</li>
-<li>Apple iCloud encryption</li>
+    <li>TLS/SSL encryption in transit</li>
+    <li>Secure API authentication</li>
+    <li>iOS device encryption</li>
+    <li>Apple iCloud encryption</li>
 </ul>
 
 <p>
-No electronic transmission is 100% secure.
-You are responsible for securing your device and iCloud credentials.
+No electronic transmission is completely secure. You are responsible for securing your device and iCloud credentials.
 </p>
 
 <h2>8. Third-Party Services</h2>
-
-<p>The Application uses:</p>
 <ul>
-<li>Apple (App Store, iCloud)</li>
-<li>Firebase (Google LLC)</li>
-<li>AppHud</li>
-<li>Replicate or other AI providers</li>
+    <li>Apple (App Store, iCloud)</li>
+    <li>Firebase (Google LLC)</li>
+    <li>AppHud</li>
+    <li>Replicate</li>
 </ul>
 
 <p>
@@ -255,24 +204,15 @@ We are not responsible for third-party privacy practices.
 </p>
 
 <h2>9. Children</h2>
+<p>The Application is not intended for individuals under 16 (or the minimum age under local law).</p>
 
+<h2>10. Changes</h2>
 <p>
-The Application is not intended for individuals under 16 (or the minimum age under local law).
-</p>
-
-<h2>10. Changes to This Policy</h2>
-
-<p>
-We may update this Privacy Policy.
-The updated version will be available in the Application.
-</p>
-
-<p>
-Continued use after updates constitutes acceptance of the revised policy.
+We may update this Privacy Policy. The current version is available within the Application.
+Continued use constitutes acceptance of updates.
 </p>
 
 <h2>11. Contact</h2>
-
 <p>
 Aleksei Chusovitin<br>
 Email: lapki.alex@gmail.com
